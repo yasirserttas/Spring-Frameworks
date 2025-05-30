@@ -1,0 +1,11 @@
+services:
+  db:
+    image: postgres
+    restart: always
+    container_name: todoList
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: 12345
+      POSTGRES_DB: todoList
+    ports:
+      - "5432:5432"
